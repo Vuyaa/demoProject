@@ -25,7 +25,7 @@ const InvestmentForm = (props) => {
     setUserInput((prevInput) => {
       return {
         ...prevInput,
-        [input]: value,
+        [input]: +value, //plus converts string to number
       };
     });
   };
